@@ -45,7 +45,7 @@ function makeSound(char){
             break;
 
         default:
-            console.log("textInside");
+            console.log("char");
             return;
     }
 
