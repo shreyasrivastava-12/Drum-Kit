@@ -35,7 +35,7 @@ for(var i = 0;i<drums.length;i++){
                 break;
 
             default:
-                console.log("fjghdiughr");
+                console.log("textInside");
                 return;
         }
 

@@ -39,7 +39,7 @@ for(var i=0;i<drums.length;i++){
                 kick.play();
             break;
 
-            default: console.log("")
+            default: console.log("textInside")
         }
     });
 }
