@@ -4,12 +4,14 @@ for(var i=0;i<drums.length;i++){
     drums[i].addEventListener("click", function(){
         var char = this.textContent;
         makeSound(char);
+        makeAnimation(char);
     });
 }
 
 document.addEventListener("keydown", function(event){
     var char = event.key;
     makeSound(char);
+    makeAnimation(char);
 })
 
 function makeSound(char){
@@ -51,4 +53,14 @@ function makeSound(char){
 
         default: console.log("char")
     }
+}
+
+function makeAnimation(char){
+
+    var activeDrum = document.querySelector("." + char);
+
+    activeDrum.classList.add("pressed");
+
+    setTimeout(function(){
+        activeDrum.classList.remove("pressed");} , 100);
 }
